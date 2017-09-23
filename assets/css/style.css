@@ -5,24 +5,28 @@
   color: #777777;
 }
 
- h1 {
- 	font-family: "Georgia", "Times", "Times New Roman", "serif";
- 	color: #ffffff;
-	background-color: #4aaaa5;
-	font-size: 28px;
+.fontfamily {
+	font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
 
-h2 {
-	font-family: "Georgia", "Times", "Times New Roman", "serif";
- 	color: #4aaaa5;
+.whitegreen {
 	background-color: #ffffff; 
+	color: #4aaaa5;	
+}
+ 
+.greenwhite {
+	background-color: #4aaaa5;
+ 	color: #ffffff;
+}
+
+.largeh {
+		font-size: 28px;
+}
+.mediumh {
 	font-size: 24px;
 }
 
-h3 {
-	font-family: "Georgia", "Times", "Times New Roman", "serif";
- 	color: #4aaaa5;
-	background-color: #ffffff; 
+.smallh {
 	font-size: 20px;
 }
 
@@ -54,14 +58,15 @@ nav {
 .navlink {
 	margin-right: 20px;
 	text-decoration: none;
+	color: #dedede;
 }
 
 .mcontent {
 	position: fixed;
 	background-image:url("whirlpool.png");
-	left: 10px;
+	left: 0px;
 	top: 85px;
-	width: 1340px;
+	width: 1362px;
 	height: 495px;
 	border-style: inset;
 
@@ -83,10 +88,11 @@ nav {
 	text-align: left;
 	left: 20px;
 	top: 15px;
+
 }
 
 #line1 {
-	width: 560px;
+	width: 580px;
 	height:3px;
 	background: #dedede; 
 	position: absolute;
@@ -95,32 +101,22 @@ nav {
 }
 
 #bio-image {
-	/*position: absolute;*/
 	float: left;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 120px;
 	width: 150px;
 	height: 130px;
-	/*left: 20px;
-	top: 80px;*/
 }
 
 #p1 {
-	/*position: absolute;*/
 	width: 620px;
 	margin-top: 100px;
 	padding: 20px;
 	margin-bottom: 0px;
-	/*margin-left: 70px;*/
-/*	left: 150px;
-	top: 40px; */
 }
 
 #p2 {
-	/*position: absolute;
-	left: 20px;
-	top: 270px; */
 	margin-top: 0px;
 	width: 600px;
 	margin-left: 20px;
@@ -129,19 +125,19 @@ nav {
 .sidebar {
 	position: absolute;
 	top: 20px;
-	left:800px;
-	width: 240px;
+	left:830px;
+	width: 270px;
 	height: 180px;
 	background: #ffffff;
 	text-align: center;
 }
 
+
 #connectme {
 	position: absolute;
-	left: 20px;
+	left: 40px;
 	top: 5px;
 	text-align: center;
-	
 }
 
 #line2 {
@@ -149,39 +145,34 @@ nav {
 	height:2px;
 	background: #dedede; 
 	position: absolute;
-	left: 20px;
+	left: 40px;
 	top: 60px;
-}
-
-.icon {
-	width: 70px;
-	height: 70px;
 }
 
 #github {
 	position: absolute;
-	left: 20px;
+	left: 40px;
 	top: 90px;
 }
 
 #linkedin {
 	position: absolute;
-	left: 90px;
+	left: 110px;
 	top: 90px;
 }
 
 #stackoverflow {
 	position: absolute;
-	left: 160px;
+	left: 180px;
 	top: 90px;
 }
 
 .footer {
 	position: fixed;
 	top:580px;
-	left: 10px;
+	left: 0px;
 	background-color: #666666;
-	width: 1340px;
+	width: 1362px;
 	height: 80px;
 	color: #ffffff;
 }
@@ -189,7 +180,7 @@ nav {
 .layer {
 	position: absolute;
 	background-color: #4aaaa5;
-	width: 1340px;
+	width: 1362px;
 	height: 8px;
 	top: 0;
 	left: 0;
@@ -238,4 +229,50 @@ input {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.icon {
+	width: 70px;
+	height: 70px;
+}
+
+.portfolio {
+	position: absolute;
+	left: 20px;
+	top: 90px; 
+}
+
+#portfoliotble {
+	position: absolute;
+	top: 0px;
+	width: 580px;
+	height: 240px;
+	border: 1px inset #dedede;
+    border-collapse: collapse;
+}
+
+th {
+	padding-top: 10px;
+	padding-right: 20px;
+	margin: 0px;
+	border-right: 1px inset #dedede;
+	border-left: 1px inset #dedede;
+}
+
+#titles {
+	height: 15px;
+}
+
+td {
+	padding: 10px;
+	margin: 0px;
+	width: 33%;
+	border-right: 1px inset #dedede;
+	border-left: 1px inset #dedede;
+	text-align: center;
+}
+
+.projectimg {
+	width: 130px;
+	height: 80px;
 }
