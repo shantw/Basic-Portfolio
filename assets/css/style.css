@@ -19,6 +19,10 @@
  	color: #ffffff;
 }
 
+.bluelink {
+	color: blue;
+}
+
 .largeh {
 		font-size: 28px;
 }
@@ -31,11 +35,12 @@
 }
 
 .mheader {
-	position: fixed;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	width: 1300px;
 	height: 80px;
-	top: 0;
-	left: 10px;
+
 }
 
 .header {
@@ -45,7 +50,7 @@
 	width: 225px;
 	height: 80px;
 	top: 5px;
-	left: 120px;
+	left: 110px;
 }
 
 nav {
@@ -62,25 +67,36 @@ nav {
 }
 
 .mcontent {
-	position: fixed;
-	background-image:url("whirlpool.png");
+	position: absolute;
 	left: 0px;
 	top: 85px;
-	width: 1362px;
-	height: 495px;
+	background-image:url("whirlpool.png");
+	width: 1364px;
+	height: 605px;
 	border-style: inset;
-
+	overflow: auto;
 }
+
+.mcontentp {
+	position: absolute;
+	left: 0px;
+	top: 85px;
+	background-image:url("whirlpool.png");
+	width: 1364px;
+	height: 840px;
+	border-style: inset;
+	overflow: auto;
+}
+
 .content {
 	position: absolute;
-	left: 120px;
-	top: 20px;
+	left: 110px;
+	top: 30px;
 	padding: 0px;
-	margin: 0 auto;
+	margin-bottom: 20px;
 	width: 650px;
-	height: 460px;
+	height: auto;
 	background: #ffffff;
-	line-height: 26px;
 }
 
 #aboutme {
@@ -114,17 +130,20 @@ nav {
 	margin-top: 100px;
 	padding: 20px;
 	margin-bottom: 0px;
+	line-height: 26px;
 }
 
 #p2 {
 	margin-top: 0px;
 	width: 600px;
 	margin-left: 20px;
+	margin-bottom: 20px;
+	line-height: 26px;
 }
 
 .sidebar {
 	position: absolute;
-	top: 20px;
+	top: 30px;
 	left:830px;
 	width: 270px;
 	height: 180px;
@@ -168,19 +187,20 @@ nav {
 }
 
 .footer {
-	position: fixed;
-	top:580px;
+
+	position: absolute;
 	left: 0px;
 	background-color: #666666;
-	width: 1362px;
-	height: 80px;
+	width: 1364px;
+	height: 100px;
 	color: #ffffff;
+	margin: 0 auto;
 }
 
 .layer {
 	position: absolute;
 	background-color: #4aaaa5;
-	width: 1362px;
+	width: 1364px;
 	height: 8px;
 	top: 0;
 	left: 0;
@@ -200,6 +220,10 @@ nav {
 	top: 110px;
 }
 
+.formparent {
+	height: 530px;
+}
+
 #contactform {
 	position: absolute;
 	left: 20px;
@@ -209,13 +233,13 @@ nav {
 
 input {
 	margin-bottom: 10px;
-	width: 560px;
+	width: 590px;
 	height: 30px;
 }
 
 #messagebox {
-	width: 560px;
-	height: 130px;
+	width: 590px;
+	height: 200px;
 }
 
 #sbutton {
@@ -237,42 +261,46 @@ input {
 }
 
 .portfolio {
-	position: absolute;
-	left: 20px;
-	top: 90px; 
-}
-
-#portfoliotble {
-	position: absolute;
-	top: 0px;
-	width: 580px;
-	height: 240px;
-	border: 1px inset #dedede;
-    border-collapse: collapse;
-}
-
-th {
-	padding-top: 10px;
-	padding-right: 20px;
-	margin: 0px;
-	border-right: 1px inset #dedede;
-	border-left: 1px inset #dedede;
-}
-
-#titles {
-	height: 15px;
-}
-
-td {
-	padding: 10px;
-	margin: 0px;
-	width: 33%;
-	border-right: 1px inset #dedede;
-	border-left: 1px inset #dedede;
-	text-align: center;
+	height: 770px;
 }
 
 .projectimg {
-	width: 130px;
-	height: 80px;
+	width: 265px;
+	height: 190px;
+}
+
+.nostyle {
+ list-style-type:none ;
+}
+
+li {
+	padding-bottom: 20px;
+}
+
+#ul1 {
+	position: absolute;
+	top: 100px;
+	left: -10px;
+	width: 265px;
+	height: 230px;
+}
+
+#ul2 {
+	position: absolute;
+	left: 295px;
+	top: 100px;
+	width: 265px;
+	height: 230px;
+}
+
+.wrapper {
+	min-height: calc(100vh - 80px);
+}
+
+.wrapperc {
+	min-height: calc(100vh + 5px);
+}
+
+.wrapperp {
+	min-height: calc(100vh + 255px);
 }
